@@ -1,0 +1,8 @@
+Origin: Hectorq'repo
+Label: Hectorq
+Suite: stable
+Version: 1.0
+Codename: hectorq
+Architectures: iphoneos-arm
+Components: main
+Description: Hectorq's Tweaks

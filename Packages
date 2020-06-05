@@ -1,0 +1,16 @@
+Package: com.htmake.vpntool
+Version: 1.0.0-2+debug
+Architecture: iphoneos-arm
+Maintainer: hector
+Installed-Size: 492
+Depends: mobilesubstrate
+Filename: ./debs/com.htmake.vpntool_1.0.0-2+debug_iphoneos-arm.deb
+Size: 48546
+MD5sum: ddc0d739339d1abef386f265bd7a912f
+SHA1: 60a775997fed70613eefae3f16a0dde0def0319e
+SHA256: 444829131a2a33c248b6015c51bee018e0cccc9fc5ce66360bd33dde2c0ace29
+Section: Tweaks
+Description: An awesome MobileSubstrate tweak!
+Author: hector
+Name: VPNTool
+
