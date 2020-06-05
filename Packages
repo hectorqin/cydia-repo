@@ -14,3 +14,38 @@ Description: An awesome MobileSubstrate tweak!
 Author: hector
 Name: VPNTool
 
+Package: com.pantsthief.flexing
+Version: 1.2.0-1+debug
+Architecture: iphoneos-arm
+Maintainer: Tanner Bennett
+Installed-Size: 300
+Pre-Depends: firmware (>= 8.0)
+Depends: libflex
+Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
+Filename: ./debs/com.pantsthief.flexing_1.2.0-1+debug_iphoneos-arm.deb
+Size: 19128
+MD5sum: e95e569fa79ee811bd56031a1db61ca2
+SHA1: 33ccea15053dc15258778bdd1fb19b98e832f9d2
+SHA256: 4948b4bdaae2f0e08cb2dcc7a382c8c8714476fdda6d416dcb788fa5d651caec
+Section: Tweaks
+Description: Open FLEX anywhere!
+Author: Tanner Bennett
+Name: FLEXing
+
+Package: com.pantsthief.swizzle
+Version: 0.0.1-2+debug
+Architecture: iphoneos-arm
+Maintainer: Tanner Bennett
+Installed-Size: 2176
+Pre-Depends: firmware (>= 8.0)
+Depends: mobilesubstrate, com.pantsthief.flexing
+Filename: ./debs/com.pantsthief.swizzle_0.0.1-2+debug_iphoneos-arm.deb
+Size: 343970
+MD5sum: 7cf329f286078bdfac49e0da55c033d7
+SHA1: 036bdc1824cb9867b9f514cb4130ad4fea08cea6
+SHA256: 963848d049c0c2203bcabb4f07e48f85c045ef3afd6a697bd3574296a95df822
+Section: Tweaks
+Description: Make tweaks from anywhere!
+Author: Tanner Bennett
+Name: Swizzle
+
