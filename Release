@@ -1,8 +1,8 @@
-Origin: Hectorq'repo
-Label: Hectorq
+Origin: Hectorqin'repo
+Label: Tools
 Suite: stable
-Version: 1.0
-Codename: hectorq
+Version: 1.0.0
+Codename: hectorqin
 Architectures: iphoneos-arm
 Components: main
-Description: Hectorq's Tweaks
+Description: Hectorqin's Tweaks
