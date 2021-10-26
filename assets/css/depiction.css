@@ -47,13 +47,13 @@ table {
 }
 
 body {
-	margin: 0;
 	padding: 0;
 	background-color: #efeff4;
 	-webkit-font-smoothing: antialiased;
-	margin: 0;
+	margin: 0 auto;
 	font: 14px -apple-system-font, ".Helvetica NeueUI", "Helvetica Neue", sans-serif;
 	width: 100%;
+	padding-top: 20px;
 	padding-bottom: 50px;
 }
 
@@ -238,6 +238,59 @@ tr a img {
 	border-radius: 5px;
     vertical-align: -5px;
     margin-right: 5px;
+}
+
+.box.header, .box.source {
+	text-align: left;
+	margin-top: 10px;
+}
+
+.box.header > .info {
+	display: inline-block;
+	padding: 6px;
+}
+
+#icon {
+	width: 64px;
+    height: 64px;
+    vertical-align: top;
+	display: inline-block;
+}
+
+#name {
+	margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.source-info {
+	display: block;
+}
+
+.source-icon {
+	width: 64px;
+    height: 64px;
+    vertical-align: top;
+	display: inline-block;
+}
+
+#source-name {
+	display: inline-block;
+	font-weight: bold;
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#footer {
+    display: block;
+    margin: 9px;
+    font-size: 12px;
+    text-align: center
 }
 
 /* Dark mode */

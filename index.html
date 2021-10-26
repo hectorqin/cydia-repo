@@ -1,29 +1,319 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>My Super Cool Repo!</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-		<!-- If you have a css file uncomment the line below -->
-		<!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
-	   <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- your repo's icon -->
-	   <style>
-		   body {
-			   text-align: center;
-		   }
-		   a {
-			   display: block;
-			   height: 40px;
-			   line-height: 40px;
-			   margin-top: 10px;
-		   }
-	   </style>
-	</head>
-	<body>
-		<h3>Hectorqin's Cydia Repository</h3>
-		<a class="cydiaLink" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://cydia.htmake.com/"> Click here to add Hectorq's Repo to Cydia!</a>
-		<a class="zebraLink" href="zbra://sources/add/https://cydia.htmake.com/"> Click here to add Hectorq's Repo to Zebra!</a>
-		<a class="sileoLink" href="sileo://source/https://cydia.htmake.com/"> Click here to add Hectorq's Repo to Sileo!</a>
-		<a class="installerLink" href="installer://add/https://cydia.htmake.com/"> Click here to add Hectorq's Repo to Installer!</a>
-	</body>
+
+<head>
+	<title>Hectorqin's Repo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-title" content="Hectorqin's Repo" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="robots" content="index, follow" />
+	<meta name="title" content="Hectorqin's Repo" />
+	<meta name="description" content="所有插件旨在分享，如有侵权联系删除" />
+	<meta name="keywords"
+		content="iPhone,iPad,Mac,Cydia,Sileo,Zebra,插件源,Cydia源,Sileo源,Zebra源,软件源,中文源,官方源,Hectorqin's Repo地址,源网址,插件推送源,IOS插件,,Hectorqin's Repo源网址,Hectorqin's Repo源中文网,Hectorqin's Repo网址,Hectorqin's Repo中文网,信赖的中文源,Hectorqin's Repo,Hectorqin's Repo,插件,汉化,软件源,Cydia中文源,最好的中文源,安全中文源,放心源" />
+	<base target="_top">
+	<link rel="apple-touch-icon" href="./assets/CydiaIcon.png">
+	<link rel="shortcut" href="./assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+	<link rel="stylesheet" href="./assets/css/index.css">
+
+	<script src="./assets/js/cytyle.js" type="text/javascript"></script>
+	<script src="//cdn.bootcss.com/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/js/modal.js" type="text/javascript"></script>
+	<script src="./assets/js/art-template-4.13.2.js" type="text/javascript"></script>
+</head>
+
+<body class="pinstripe">
+	<panel>
+		<fieldset class="box1">
+			<a href="javascript:void;" data-toggle="modal" data-target="#cydiatj">
+				<img class="icon" src="./assets/icon/default/cydia.png" />
+				<div>
+					<div>
+						<label>
+							<p>越狱商店中添加Hectorqin's Repo</p>
+						</label>
+					</div>
+				</div>
+			</a>
+		</fieldset>
+
+		<fieldset class="box1">
+			<div>
+				<img class="icon" src="./assets/CydiaIcon.png" style="width:64px; height:64px; vertical-align: top;" />
+				<div style="float: right; vertical-align: middle; text-align: center; line-height: 60px">
+					<a style="font-size: 24px" href="https://cydia.htmake.com/"> Hectorqin's Repo </a>
+				</div>
+				<hr />
+				<p>
+					请使用 Cydia<sup><small>™</small></sup> 添加地址 <br />
+					<strong><a href="https://cydia.htmake.com/">https://cydia.htmake.com/</a></strong>
+				</p>
+			</div>
+		</fieldset>
+		<block class="box1" id="stats_zone">
+
+		</block>
+
+		<!-- <fieldset class="box1" style="display: none">
+			<div>
+				<form action="mbsearch.php" method="get">
+					<div class="input-group">
+						<input type="search" name="name" value="" class="form-control" placeholder="输入你想要搜索的插件">
+						<span class="input-group-addon"><button type="submit" class="badge"
+								style="background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);">&nbsp;搜索&nbsp;</button></span>
+					</div>
+				</form>
+			</div>
+			<ul class="doubleCol">
+				<li class="borderRight">
+					<a onclick="parent.location.href = './ios9.php'" target="_blank">
+						<div class="test1">
+							<img class="icon" src="./assets/icon/ios9.png" />
+							<div>
+								<div>
+									<label>
+										<p>IOS 9分类</p>
+									</label>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="borderRight">
+					<a onclick="parent.location.href = './ios11.php'" target="_blank">
+						<div class="test1">
+							<img class="icon" src="./assets/icon/ios11.png" />
+							<div>
+								<div>
+									<label>
+										<p>IOS11分类</p>
+									</label>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="borderRight">
+					<a onclick="parent.location.href = './ios13.php'" target="_blank">
+						<div class="test1">
+							<img class="icon" src="./assets/icon/ios13.png" />
+							<div>
+								<div>
+									<label>
+										<p>IOS13分类</p>
+									</label>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="borderRight">
+					<a onclick="parent.location.href = './ios10.php'" target="_blank">
+						<div class="test1">
+							<img class="icon" src="./assets/icon/ios10.png" />
+							<div>
+								<div>
+									<label>
+										<p>IOS10分类</p>
+									</label>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="borderRight">
+					<a onclick="parent.location.href = './ios12.php'" target="_blank">
+						<div class="test1">
+							<img class="icon" src="./assets/icon/ios12.png" />
+							<div>
+								<div>
+									<label>
+										<p>IOS12分类</p>
+									</label>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="borderRight">
+					<a onclick="parent.location.href = './Sections1.php'" target="_blank">
+						<div class="test1">
+							<img class="icon" src="./assets/icon/ios.png" />
+							<div>
+								<div>
+									<label>
+										<p>IOS应用归类</p>
+									</label>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<a href="https://cydia.htmake.com/ios14.php" target="_blank">
+				<img class="icon" src="./assets/icon/ios14.png" />
+				<div>
+					<div>
+						<label>
+							<p>IOS14分类更新中🚧</p>
+							<span style="color: #6e6d6d; float:right;">
+								<l style="font-size: 8px;">
+									资源不断添加中👻<br />
+									欢迎反馈兼容信息
+								</l>
+							</span>
+						</label>
+					</div>
+				</div>
+			</a>
+		</fieldset> -->
+
+		<label>
+			<p>插件</p>
+		</label>
+		<fieldset class="box1" id="tweaks_zone">
+		</fieldset>
+
+		<label class="source">
+			<p>软件源信息</p>
+		</label>
+		<fieldset class="box1""source">
+			<a href="/">
+				<img class="icon" src="./assets/CydiaIcon.png" />
+				<div>
+					<div>
+						<label>
+							<p id="source-name">
+								Hectorqin's Repo </p>
+						</label>
+					</div>
+				</div>
+			</a>
+			<div class="source-description" id="source-description">
+				<p>
+					<marquee scrollAmount=3 width="98%"><span style="color:#FF0000">所有插件旨在分享，如有侵权联系删除</span></marquee>
+				</p>
+			</div>
+		</fieldset>
+		<footer id="footer">
+			<p>
+				<span class="source-name">Hectorqin's Repo</span>
+			</p>
+			<p>
+				<span id="section">版权所有 &copy; 2018-2021</span>
+			</p>
+		</footer>
+	</panel>
+
+	<div class="modal fade" id="cydiatj" tabindex="-1" role="dialog" aria-labelledby="cydiatj">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">×</span></button>
+					<h4 class="modal-title">选择你要添加源的越狱工具</h4>
+				</div>
+				<div class="modal-body">
+					<fieldset class="box1 cydia-add">
+						<a>
+							<img class="icon" src="./assets/icon/icon/cydia.png">
+							<div>
+								<div>
+									<label>
+										<p>在Cydia中添加</p>
+										<span
+											onclick="location.href = 'cydia://url/https://cydia.saurik.com/api/share#?source=https://cydia.htmake.com/'"
+											class="btn btn-default btn-xs">&nbsp;添加&nbsp;</span>
+									</label>
+								</div>
+							</div>
+						</a>
+					</fieldset>
+					<fieldset class="box1 sileo-add">
+						<a>
+							<img class="icon" src="./assets/icon/icon/sileo.png">
+							<div>
+								<div>
+									<label>
+										<p>在Sileo中添加</p>
+										<span onclick="location.href = 'sileo://source/https://cydia.htmake.com/'"
+											class="btn btn-default btn-xs">&nbsp;添加&nbsp;</span>
+									</label>
+								</div>
+							</div>
+						</a>
+					</fieldset>
+					<fieldset class="box1 install-add">
+						<a>
+							<img class="icon" src="./assets/icon/icon/installer.png">
+							<div>
+								<div>
+									<label>
+										<p>在Installer中添加</p>
+										<span onclick="location.href = 'installer://add/repo=https://cydia.htmake.com/'"
+											class="btn btn-default btn-xs">&nbsp;添加&nbsp;</span>
+									</label>
+								</div>
+							</div>
+						</a>
+					</fieldset>
+					<fieldset class="box1 zebra-add">
+						<a>
+							<img class="icon" src="./assets/icon/icon/zebra.png">
+							<div>
+								<div>
+									<label>
+										<p>在Zebra中添加</p>
+										<span onclick="location.href = 'zbra://sources/add/https://cydia.htmake.com/'"
+											class="btn btn-default btn-xs">&nbsp;添加&nbsp;</span>
+									</label>
+								</div>
+							</div>
+						</a>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/html" id="stats_tpl">
+		<p>
+			全源总计 <strong>{{TweaksCount}}</strong> 个软件包。
+		</p>
+		<hr>
+		<p>
+			更新时间：<strong>{{UpdateTime}}</strong>
+		</p>
+    </script>
+	<script type="text/html" id="tweaks_tpl">
+		{{each list}}
+		<a href="{{$value.Depiction || 'javascript://'}}">
+			<img class="icon" src="{{$value.Icon || './assets/icon/1.png'}}" onerror="this.src='./assets/icon/1.png'">
+			<div>
+				<div>
+					<label>
+						<p>{{$value.Name}}</p>
+					</label>
+				</div>
+			</div>
+		</a>
+		{{/each}}
+		<!-- <a href="./assets/section/15">
+			<img class="icon" src="./assets/icon/default/moreinfo.png" />
+			<div>
+				<div>
+					<label>
+						<p>更多…</p>
+					</label>
+				</div>
+			</div>
+		</a> -->
+    </script>
+	<script src="./assets/js/main.js" type="text/javascript"></script>
+</body>
 </html>

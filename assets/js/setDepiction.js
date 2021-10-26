@@ -28,6 +28,10 @@ $(function() {
 
                 compatible($(this).find("miniOS").text().trim(), $(this).find("maxiOS").text().trim());
 
+                $("#icon").attr("src", $(this).find("icon").text().trim() || "../assets/icon/1.png");
+                $("#name").append($(this).find("name").text().trim());
+                $("#version").append($(this).find("version").text().trim());
+
                 $(xml).find("description").each(function() {
                     $("#description").append("<li>" + $(this).text().trim() + "</li>");
                 });
@@ -45,7 +49,8 @@ $(function() {
                     changelogExport += "</li>";
                 });
                 $("#changelog-date").append($(this).find("lastupdate").text().trim());
-                $("#changelog").append(changelogExport + '<table><tr><td><a href="changelog/?p=' + bundle + '" target="_blank">Full changelog</a></td></tr></table>');
+                $("#changelog").append(changelogExport);
+                // $("#changelog").append(changelogExport + '<table><tr><td><a href="changelog/?p=' + bundle + '" target="_blank">Full changelog</a></td></tr></table>');
 
                 $(xml).find("screen").each(function() {
                     shouldShowNoScreenshots = false;
@@ -65,10 +70,14 @@ $(function() {
                 $("#infoTable").append('<tr><th>Category</th><td>' + $(this).find("category").text().trim() + '</td></tr>');
 
                 $("#links").append('<tr><td><a href="' + $(this).find("github").text().trim() + '" target="_blank"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/4b/75/74/4b757442-8ff0-1bcb-dfde-8d39fba370c4/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.png" />Github</a></td></tr>');
-                $("#links").append('<tr><td><a href="' + $(this).find("twitter").text().trim() + '" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/d3/95/33/d3953380-0fbb-a92e-3be4-d9c0daf90499/ProductionAppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.png" />Twitter</a></td></tr>');
+                if ($(this).find("twitter").text().trim()) {
+                    $("#links").append('<tr><td><a href="' + $(this).find("twitter").text().trim() + '" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/d3/95/33/d3953380-0fbb-a92e-3be4-d9c0daf90499/ProductionAppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.png" />Twitter</a></td></tr>');
+                }
                 $("#links").append('<tr><td><a href="' + $(this).find("mail").text().trim() + '" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/c7/40/e5/c740e5f0-2a62-4fa7-dc1b-66ea3d519545/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/460x0w.png" />Mail</a></td></tr>');
                 $("#links").append('<tr><td><a href="' + $(this).find("paypal").text().trim() + '" target="_blank"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/47/91/55/4791557c-5d1e-7357-9d5e-1eb20d3bb42b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.png" />Paypal</a></td></tr>');
-                $("#links").append('<tr><td><a href="' + $(this).find("reddit").text().trim() + '" target="_blank"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/3d/fa/7c/3dfa7c58-641e-73c9-73d6-979f4bdcfda7/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.png" />Reddit</a></td></tr>');
+                if ($(this).find("reddit").text().trim()) {
+                    $("#links").append('<tr><td><a href="' + $(this).find("reddit").text().trim() + '" target="_blank"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/3d/fa/7c/3dfa7c58-641e-73c9-73d6-979f4bdcfda7/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/460x0w.png" />Reddit</a></td></tr>');
+                }
             });
         }
     });
